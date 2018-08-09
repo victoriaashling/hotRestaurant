@@ -33,7 +33,7 @@ let tables = [
 
 
 app.get("/", (request, response) => {
-    response.sendFile(path.join(__dirname, "index.html"));
+    response.sendFile(path.join(__dirname, "view.html"));
 });
 
 app.get("/table", (request, response) => {
