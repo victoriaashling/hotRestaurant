@@ -64,6 +64,7 @@ app.post("/api/tables", (request, response) => {
         tables.push(newTable);
     }
 
+    alert("hi");
     response.sendFile(path.join(__dirname, "add.html"));
 });
 
