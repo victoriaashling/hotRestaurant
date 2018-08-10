@@ -75,7 +75,7 @@
                     $("#waitlistSection").append(waitlistSection);
     
                     var tableNumber = i + 1;	 
-                    $("#waitlistWell-" + i + 1).append("<h2><span class='label label-primary'>" + tableNumber + "<\/span> | " + waitlistData[i].customerID + ": " + tableData[i].customerName.charAt(0).toUpperCase() + tableData[i].customerName.substr(1) + "<\/h2>");
+                    $("#waitlistWell-" + i + 1).append("<h2><span class='label label-primary'>" + tableNumber + "<\/span> | " + waitlistData[i].customerID + ": " + waitlistData[i].customerName.charAt(0).toUpperCase() + waitlistData[i].customerName.substr(1) + "<\/h2>");
                 }
             });
         }
