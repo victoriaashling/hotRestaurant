@@ -40,7 +40,7 @@
 							<div class="form-group">
 								<label for="reserve-unique-id">Unique ID</label> <input class="form-control" id="reserve-unique-id" type="text">
                             </div>
-                            <input type="submit" value="Submit" class="btn btn-lg btn-primary">
+                            <input type="submit" value="Submit" class="btn btn-lg btn-primary" id="submit">
 						</form>
 					</div>
 				</div>
@@ -54,7 +54,7 @@
 	</div>
 	<script type="text/javascript">
 	 
-	     $(".submit").on("click", function(event) {
+	     $("#submit").on("click", function(event) {
 	       event.preventDefault();
 	 
 	       let newReservation = {
