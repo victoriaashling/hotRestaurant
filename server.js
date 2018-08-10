@@ -12,22 +12,22 @@ let waitingList = [];
 
 let tables = [
  {
-   name: "frank",
-   phoneNum: "123-4567",
-   email: "frank@gmail.com",
-   id: 900
+   customerName: "frank",
+   phoneNumber: "123-4567",
+   customerEmail: "frank@gmail.com",
+   customerID: 900
  },
  {
-   name: "Zarr",
-   phoneNum: "234-4567",
-   email: "zarr@gmail.com",
-   id: 1900
+   customerName: "Zarr",
+   phoneNumber: "234-4567",
+   customerEmail: "zarr@gmail.com",
+   customerID: 1900
  },
  {
-   name: "may",
-   phoneNum: "345-4567",
-   email: "may@gmail.com",
-   id: 800
+   customerName: "may",
+   phoneNumber: "345-4567",
+   customerEmail: "may@gmail.com",
+   customerID: 800
  }
 ];
 
