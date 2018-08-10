@@ -40,7 +40,7 @@ app.get("/table", (request, response) => {
     response.sendFile(path.join(__dirname, "table.html"));
 });
 
-app.get("/add", (request, response) => {
+app.get("/reserve", (request, response) => {
     response.sendFile(path.join(__dirname, "add.html"));
 });
 
