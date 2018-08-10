@@ -66,16 +66,21 @@
 	 
            console.log(newReservation);
            
-           $.post("/api/tables", newReservation)
+            $.post("/api/tables", newReservation)
                 .then(data => {
                     console.log(data);
                 });
+
+            $.get("/api/waitlist")
+                .then(data => {
+                    console.log(data);
+                })
 
 
             $("#reserve-name").val("");
 	        $("#reserve-phone").val("");
 	        $("#reserve-email").val("");
-	        $("#reserve-unique-id").val("");      
+            $("#reserve-unique-id").val(""); 
 	 
 	     });
 	 
