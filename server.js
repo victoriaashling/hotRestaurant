@@ -57,9 +57,11 @@ app.post("/api/tables", (request, response) => {
     
     if (tables.length >= 5) {
         waitingList.push(newTable);
+        return response.json(false);
     }
     else {
         tables.push(newTable);
+        return response.json(true);
     }
 
     response.sendFile(path.join(__dirname, "add.html"));
