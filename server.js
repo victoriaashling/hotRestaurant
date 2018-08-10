@@ -48,6 +48,10 @@ app.get("/api/tables", (request, response) => {
     return response.json(tables);
 });
 
+app.get("/api/waitlist", (request, response) => {
+    return response.json(waitingList);
+});
+
 app.post("/api/tables", (request, response) => {
     let newTable = request.body;
     tables.push(newTable);
