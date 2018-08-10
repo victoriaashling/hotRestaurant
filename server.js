@@ -56,11 +56,11 @@ app.post("/api/tables", (request, response) => {
     let newTable = request.body;
     
     if (tables.length >= 5) {
-        alert("Sorry, all of our tables are full. You have been placed on the waiting list.");
+        // alert("Sorry, all of our tables are full. You have been placed on the waiting list.");
         waitingList.push(newTable);
     }
     else {
-        alert("Success! You have a table!");
+        // alert("Success! You have a table!");
         tables.push(newTable);
     }
 
