@@ -74,6 +74,12 @@
             $.get("/api/waitlist")
                 .then(data => {
                     console.log(data);
+                    if (data === []) {
+                        alert("Success! You have a table.");
+                    }
+                    else {
+                        alert("Sorry, our tables are full. You have been placed on the waitlist.")
+                    }
                 })
 
 
