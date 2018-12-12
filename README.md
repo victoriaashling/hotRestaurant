@@ -1,1 +1,3 @@
-# hotRestaurant
+# Hot Restaurant
+
+An app that allows users to make reservations for a table at a restaurant. If the tables are all full (there are only five -- it's a small boutique restaurant), they will be placed on the waitlist instead. When you click the submit button, you will be informed whether you've been successful in trying to get a table or whether you have been placed on the waitlist. You can also view the list of currently booked tables.

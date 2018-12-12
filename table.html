@@ -40,7 +40,8 @@
 		<footer class="footer">
 			<div class="container">
 				<p>Control Panel</p>
-				<p><a href="#" id="clear">Clear Table</a> | <a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a></p>
+				<!-- <p><a href="#" id="clear">Clear Table</a> | <a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a></p> -->
+				<p><a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a></p>
 			</div>
 		</footer>
 	</div>
@@ -80,16 +81,17 @@
             });
         }
     
-        function clearTable() {
-          var currentURL = window.location.origin;
-          $.ajax({ url: currentURL + "/api/clear", method: "POST" });
-        }
+        // function clearTable() {
+        //   var currentURL = window.location.origin;
+				//   $.ajax({ url: currentURL + "/api/clear", method: "POST" });
+				//		This post method does not currently exist on the server side.
+        // }
     
-        $("#clear").on("click", function() {
-          alert("Clearing...");
-          clearTable();
-          location.reload();	 
-        });
+        // $("#clear").on("click", function() {
+        //   alert("Clearing...");
+        //   clearTable();
+        //   location.reload();	 
+        // });
     
         runTableQuery();
         runWaitListQuery();	 
