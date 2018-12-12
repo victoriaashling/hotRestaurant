@@ -68,18 +68,18 @@
            
             $.post("/api/tables", newReservation)
                 .then(data => {
-                    console.log(data);
-                });
-
-            $.get("/api/waitlist")
-                .then(data => {
-                    console.log(data);
-                    if (data === true) {
+					console.log(data);
+					if (data === true) {
                         alert("Success! You have a table.");
                     }
                     else {
                         alert("Sorry, our tables are full. You have been placed on the waitlist.")
                     }
+                });
+
+            $.get("/api/waitlist")
+                .then(data => {
+                    console.log(data);
                 })
 
 

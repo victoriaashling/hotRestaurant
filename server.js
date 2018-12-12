@@ -45,11 +45,11 @@ app.get("/reserve", (request, response) => {
 });
 
 app.get("/api/tables", (request, response) => {
-    return response.json(tables);
+    response.json(tables);
 });
 
 app.get("/api/waitlist", (request, response) => {
-    return response.json(waitingList);
+    response.json(waitingList);
 });
 
 app.post("/api/tables", (request, response) => {
@@ -57,11 +57,11 @@ app.post("/api/tables", (request, response) => {
     
     if (tables.length >= 5) {
         waitingList.push(newTable);
-        return response.json(false);
+        response.json(false);
     }
     else {
         tables.push(newTable);
-        return response.json(true);
+        response.json(true);
     }
 
     response.sendFile(path.join(__dirname, "add.html"));
